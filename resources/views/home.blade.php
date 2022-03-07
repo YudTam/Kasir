@@ -18,7 +18,6 @@
       @foreach ($kopi as $k)
           
       
-     
         <form action="/checkout/{{ $k->id }}" method="GET">
           <tr>
             <td><img src="/img/{{ $k->img }}" alt="" width="100px;" height="100px"></td>

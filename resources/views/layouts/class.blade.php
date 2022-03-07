@@ -4,7 +4,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="@starbucks">
+    <meta property="twitter:creator" content="@starbucksprtnrs">
+    <meta property="og:title" content="Starbucks®">
+    <meta property="og:image" data-hid="image" content="/img/meta.png">
+    <meta property="twitter:image" data-hid="twitter:image" content="https://app.starbucks.com/weblx/images/social/summary_image.png">
 
+    {{-- Jquery --}}
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -17,14 +27,14 @@
         <div class="container text-center">
           <div class="row">
           <div class="col">
-            <a href="/menu" style="float: left; color: white;">Menu</a>
+            <a href="/menu" style="float: left; color: white; margin-left: 50px;">Menu</a>
           </div>
             <div class="col">
               <a href="/register" style="float: right; border-radius: 50px;" class="ml-3 btn btn-dark">Register</a>
               <a href="/login" style="float: right; border-radius: 50px;" class="mr-1 btn btn-dark">Login</a>
           </div>  
           </div>
-          <img src="img/bg2.png" alt="" class="rounded-circle" width="150px" height="140px">
+          <img src="/img/bg2.png" alt="" class="rounded-circle" width="150px" height="140px">
           <p class="lead mt-5 ketik" style="color: white; font-size: 70px;"><q>Start Your Day <br>With Coffee</q></p>
         </div>
       </div>
@@ -32,13 +42,13 @@
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/dis1.png" class="d-block w-100" alt="...">
+            <img src="/img/dis1.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="img/dis2.png" class="d-block w-100" alt="...">
+            <img src="/img/dis2.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="img/dis3.png" class="d-block w-100" alt="...">
+            <img src="/img/dis3.png" class="d-block w-100" alt="...">
           </div>
         </div>
        <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">

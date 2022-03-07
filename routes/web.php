@@ -59,6 +59,14 @@ Route::get('/menu/hot-drinks', function () {
     return view('menu.cold-drinks');
 });
 
+Route::get('/menu/favorites', function () {
+    return view('menu.favorites');
+});
+
+Route::get('/bayar', function () {
+    return view('bayar');
+});
+
 Route::get('/order', [App\Http\Controllers\KopiController::class, 'lihatmenu']);
 Route::get('/check', [App\Http\Controllers\Backend\OrderController::class, 'store']);
 Route::get('/checkout', [App\Http\Controllers\KopiController::class, 'lihat']);

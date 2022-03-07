@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Dongle&family=Poppins:wght@500&family=Viga&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Dongle&family=Poppins:wght@500&family=Viga&display=swap");
 
 * {
-    font-family : 'Viga', sans-serif;
+    font-family: "Viga", sans-serif;
 }
 /* linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)) */
 #jum {
-    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)), url('../img/bg2.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../img/bg2.jpg");
     background-size: cover;
 }
 
@@ -16,35 +17,38 @@
 .ketik {
     font-size: 29px;
     width: 100%;
-    white-space:nowrap;
-    overflow:hidden;
+    white-space: nowrap;
+    overflow: hidden;
     -webkit-animation: typing 5s steps(70, end);
     animation: animasi-ketik 5s steps(70, end);
-  }
-  
-  @keyframes animasi-ketik{
-    from { width: 0; }
-  }
-  
-  @-webkit-keyframes animasi-ketik{
-    from { width: 0; }
-  }
+}
 
-  
-  figure{
+@keyframes animasi-ketik {
+    from {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes animasi-ketik {
+    from {
+        width: 0;
+    }
+}
+
+figure {
     width: 250px;
     height: 250px;
     clip-path: circle(50% at 50% 50%);
     cursor: pointer;
     position: relative;
-  }
-  
-  .foto {
-    transform: scale(0.50);
+}
+
+.foto {
+    transform: scale(0.5);
     transition: all 0.4s ease;
-  }
-  
-  figcaption{
+}
+
+figcaption {
     color: white;
     font-size: 0.9rem;
     text-transform: uppercase;
@@ -56,15 +60,38 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -40%);
-  }
-  
-  figure:hover .foto{
+}
+
+figure:hover .foto {
     transform: scale(0.5);
     filter: blur(4px) brightness(70%);
-  }
-  
-  figure:hover figcaption{
+}
+
+figure:hover figcaption {
     opacity: 1;
     transform: translate(-50%, -50%);
-  }
+}
 
+.breadcrumbs {
+    padding: 10px;
+}
+
+.breadcrumbs__item {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.breadcrumbs__item:not(:last-of-type)::after {
+    content: "/";
+    margin: 0 1px;
+    color: black;
+}
+
+.breadcrumbs__link {
+    color: rgba(97, 99, 97, 0.897);
+    text-decoration: none;
+}
+.breadcrumbs__link:hover {
+    text-decoration: underline;
+}

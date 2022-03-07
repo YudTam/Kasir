@@ -109,11 +109,13 @@
       </div>
       <div class="row">
         <div class="col">
-          <a class="btn btn-primary" href="{{ url('/home') }}">
+          <a class="btn btn-primary bayar" href="{{ url('/home') }}">
             Kembali
         </a>
         </div>
       </div>
     </div>
     {{-- </div>\\ --}}
+
+    
 @endsection
